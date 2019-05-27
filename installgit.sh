@@ -1,3 +1,3 @@
 apt-get upgrade -y
 apt-get update
-apt-get install git
+apt-get install -y git
