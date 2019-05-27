@@ -11,4 +11,4 @@ apt-get install -y openssh-server
 #ufw (Uncomplicated Fire Wall es requerido para permitir acceso a las máquinas de desarrollador a través de los puertos según sea requerido: http, https, ssh, etc.)
 apt-get install -y ufw
 ufw allow 22
-ufw enable
+ufw --force enable
