@@ -4,6 +4,8 @@ apt-get update
 #git se requiere para poder clonar los repositorios correspondientes
 apt-get install -y git
 
+#net-tools se utiliza en este contexto con el fin de 
+apt-get install -y net-tools
 
 #openssh-server es para el autor una buena herramienta para acceder de manera remota al servidor mediante una consola segura.
 apt-get install -y openssh-server
@@ -12,3 +14,6 @@ apt-get install -y openssh-server
 apt-get install -y ufw
 ufw allow 22
 ufw --force enable
+
+#83824868
+#lapwai
