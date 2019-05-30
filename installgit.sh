@@ -20,6 +20,6 @@ ufw --force enable
 [ -d ~/src ] || mkdir ~/src
 #; then echo "Your directory structure already contains a $HOME/src directory. Omitting its creation!";else mkdir ~/src;fi
 cd ~/src
-echo "\n\n\nYou can now use the following command to clone the DEVOPS repo:\n\ngit clone https://github.com/aguilarsmbccr/devops.git\n\n\n"
+echo "\n\n\n\n\nSe recomienda que vaya al directorio ~/src y ya estando ubicado ahí, haga uso del siguiente comando:\n\n\ngit clone https://github.com/aguilarsmbccr/devops.git\n\n\n"
 
 
