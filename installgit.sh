@@ -19,6 +19,6 @@ ufw --force enable
 #All the examples will be hosted in the <em>src</em> directory in your $HOME path 
 mkdir ~/src
 cd ~/src
-git clone https://github.com/aguilarsmbccr/devops.git
+echo "You can now use the following command to clone the DEVOPS repo:         git clone https://github.com/aguilarsmbccr/devops.git"
 
 
