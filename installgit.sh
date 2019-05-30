@@ -16,5 +16,7 @@ ufw allow 22
 ufw allow 80
 ufw --force enable
 
+git clone https://github.com/aguilarsmbccr/devops.git
+
 #83824868
 #lapwai
