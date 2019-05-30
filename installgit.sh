@@ -17,7 +17,7 @@ ufw allow 80
 ufw --force enable
 
 #All the examples will be hosted in the <em>src</em> directory in your $HOME path 
-if [! -e ~/src]; then echo "Your directory structure already contains a $HOME/src directory. Omitting its creation!"
+if [-e ~/src]; then echo "Your directory structure already contains a $HOME/src directory. Omitting its creation!";else mkdir ~/src;fi
 cd ~/src
 echo "You can now use the following command to clone the DEVOPS repo:\ngit clone https://github.com/aguilarsmbccr/devops.git"
 
