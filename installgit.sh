@@ -15,6 +15,8 @@ apt-get install -y ufw
 ufw allow 22
 ufw allow 80
 ufw --force enable
+
+#All the examples will be hosted in the <em>src</em> directory in your $HOME path 
 mkdir ~/src
 cd ~/src
 git clone https://github.com/aguilarsmbccr/devops.git
