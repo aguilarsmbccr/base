@@ -16,6 +16,22 @@ ufw allow 22
 ufw allow 80
 ufw --force enable
 
+#Here we will install Docker so that the machines are able to instantiate a Docker image easily
+#first, we need to download the dependencies
+apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+
+#now we need to add the Docker's GPG key
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add –
+
+#install the Docker repository
+add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu  $(lsb_release -cs)  stable"
+
+#update the just recently installed repositories
+sudo apt-get update
+
+#install the latest version of Docker
+sudo apt-get install docker-ce
+
 #All the examples will be hosted in the <em>src</em> directory in your $HOME path 
 [ -d ~/src ] || mkdir ~/src
 #; then echo "Your directory structure already contains a $HOME/src directory. Omitting its creation!";else mkdir ~/src;fi
