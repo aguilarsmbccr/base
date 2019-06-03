@@ -46,7 +46,10 @@ add-apt-repository \
 apt-get update
 apt-get install -y docker-ce docker-ce-cli containerd.io
 
-
+#Add your own user to the docker group so that it can be run as a non-root user
+groupadd docker
+usermod -aG docker manuel
+ 
 
 #The following installation procedure didn't succeed
 ##########################################
